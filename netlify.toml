@@ -1,0 +1,8 @@
+[build]
+  publish = "public"  # or the directory where your built site files are located
+  command = "npm run build"  # if you're using a build command like for React, Vue, etc.
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-service-url/:splat"
+  status = 200
